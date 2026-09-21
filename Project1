@@ -1,0 +1,45 @@
+import math
+
+
+#Question 1d 
+books = ["astronomy", "calculus", "chemistry", "french", "history", "literature", "physics"]
+order = 0
+
+
+for i in books:
+    for j in books:
+        if j>i:
+            for k in books:
+                if k>j:
+                    for l in books:
+                        if l>k: 
+                            order += 1
+                            print(i, j, k, l)
+print(order)
+
+
+
+#2a
+
+count = 0
+
+
+
+for a in range(0,8):
+    for b in range(0,8): 
+        for c in range(0,8):
+            if c > b and b > a:
+                password = ['1', '1', '1', '1', '1', '1', '1', '1']
+                password[a] = '0'
+                password[b] = '0'
+                password[c] = '0'
+                print(''.join(password))
+                count += 1
+
+print(count) 
+
+
+
+
+
+    
